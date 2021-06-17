@@ -6,7 +6,7 @@ const LabelTemplate = ({ trackingNumber, fromCity, toCity }) => {
   return (
     <div className="label-wrapper">
       <div className="label">
-        <Barcode value={trackingNumber} font="Microsoft Yahei" width={1.5} />
+        <Barcode value={trackingNumber} width={1.5} />
       </div>
       <div className="from">{fromCity}</div>
       <div className="to">{toCity}</div>

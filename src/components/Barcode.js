@@ -40,7 +40,7 @@ Barcode.propTypes = {
 
 Barcode.defaultProps = {
   renderer: "svg",
-  font:"Arial, Helvetica, sans-serif"
+  font:"sans-serif, Arial, Helvetica"
 };
 
 export default Barcode;
