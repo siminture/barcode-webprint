@@ -76,7 +76,7 @@ function App() {
           </div>
 
           <div style={{ textAlign: "center" }}>
-            <Barcode value={text} renderer={renderer} />
+            <Barcode value={text} renderer={renderer} font="Arial, Helvetica, sans-serif" />
           </div>
         </div>
         <div className="right">
