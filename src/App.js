@@ -3,6 +3,7 @@ import ReactToPrint from "react-to-print";
 import LabelList from "./components/LabelList";
 import Barcode from "./components/Barcode";
 import ErrorBoundary from "./components/ErrorBoundary";
+import faker from "faker";
 
 import "./App.css";
 
@@ -11,9 +12,12 @@ function createBox(qty = 5) {
 
   for (let index = 1; index <= qty; index++) {
     boxes.push({
-      trackingNumber: "56XYYTRACKNUMBER" + index,
-      fromCity: "广州",
-      toCity: "上海",
+      trackingNumber: "XYYTRACKNUMBER" + index,
+      fromCity: faker.address.cityName(),
+      toCity: faker.address.cityName(),
+      toAddress:faker.address.streetAddress(),
+      toContactMan:faker.name.findName(),
+      toContactPhone:faker.phone.phoneNumber()
     });
   }
   return boxes;

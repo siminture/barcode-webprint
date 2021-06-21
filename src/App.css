@@ -78,13 +78,27 @@ select {
   text-align: center;
 }
 
-.from {
+.from-to {
+  display: flex;
+  font-size: 22pt;
   text-align: center;
-  font-size: 1cm;
+}
+.from {
+  flex-grow: 1;
+}
+.arrow {
+  width: 22pt;
+}
+.to {
+  flex-grow: 1;
 }
 
-.to {
-  font-size: 1cm;
+.address {
+  font-size: 18pt;
+  text-align: center;
+}
+.contact {
+  font-size: 18pt;
   text-align: center;
 }
 
