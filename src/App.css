@@ -5,10 +5,6 @@ body,
   height: 100%;
 }
 
-.toolbar > * {
-  margin-right: 1em;
-}
-
 .left {
   padding: 1em;
   margin-right: 1em;
@@ -28,31 +24,48 @@ body,
 
 button {
   padding: 0.5em 1em;
-  font-size: 12pt;
   border: #ccc solid 1px;
+  background-color: #eee;
+  font-size: 12pt;
+}
+
+button:hover {
+  background-color: #ccc;
+}
+button:active {
+  background-color: #bbb;
+}
+
+input:not([type="checkbox"], [type="raddio"]) {
+  padding: 0.4em;
+  border: #ccc solid 1px;
+  font-size: 12pt;
+}
+
+select {
+  font-size: 12pt;
+  padding: 0.4em;
+  border: #ccc solid 1px;
+  min-width: 10em;
+}
+
+.row {
+  margin: 1em 0;
+}
+
+.toolbar > * {
+  margin-right: 1em;
+}
+
+.form-control {
+  margin-left: 0.5em;
 }
 
 .barcode-input {
-  font-size: 12pt;
-  padding: 0.4em;
-  border: #ccc solid 1px;
   width: 20em;
 }
 
-.label-quantity {
-  font-size: 12pt;
-  padding: 0.5em 0.4em;
-  border: #ccc solid 1px;
-  width: 3em;
-}
-
-.renderer-select {
-  font-size: 12pt;
-  padding: 0.4em;
-  border: #ccc solid 1px;
-  width: 9em;
-}
-
+/* Beign of Labels */
 .label-wrapper {
   display: block;
   width: 10cm;
@@ -74,6 +87,8 @@ button {
   font-size: 1cm;
   text-align: center;
 }
+
+/* End of Labels */
 
 @media print {
   @page {

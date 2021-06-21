@@ -2,8 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import JsBarcode from "jsbarcode";
 
-Barcode.propTypes = {};
-
 function Barcode({ renderer: Renderer, value, ...options }) {
   const rendererRef = React.useRef();
 
@@ -40,7 +38,15 @@ Barcode.propTypes = {
 
 Barcode.defaultProps = {
   renderer: "svg",
-  font:"sans-serif, Arial, Helvetica"
+  font: "sans-serif, Arial, Helvetica",
 };
+
+// function WrappedBarcode(props) {
+//   return (
+//     <ErrorBoundary>
+//       <Barcode {...props} />
+//     </ErrorBoundary>
+//   );
+// }
 
 export default Barcode;
